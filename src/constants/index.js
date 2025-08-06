@@ -1,28 +1,26 @@
+import { m } from "framer-motion";
 import {
   mobile,
   backend,
   creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
-  nodejs,
-  mongodb,
+  mysql,
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  java, 
+  python, 
+  spring, 
+  springboot,
+  voc,
+  headlinr,
+  space,
+  amazon
 } from "../assets";
 
 export const navLinks = [
@@ -32,7 +30,11 @@ export const navLinks = [
   },
   {
     id: "work",
-    title: "Work",
+    title: "Experience",
+  },
+  {
+    id: "projects",
+    title: "Projects",
   },
   {
     id: "contact",
@@ -46,7 +48,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "React Developer",
     icon: mobile,
   },
   {
@@ -54,7 +56,7 @@ const services = [
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "UI/UX Designer",
     icon: creator,
   },
 ];
@@ -73,33 +75,26 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
   },
   {
     name: "Tailwind CSS",
     icon: tailwind,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "Java",
+    icon: java,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "Python",
+    icon: python,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "MySQL",
+    icon: mysql,
   },
+  
   {
     name: "git",
     icon: git,
@@ -109,13 +104,21 @@ const technologies = [
     icon: figma,
   },
   {
+    name: "spring",
+    icon: spring
+  },
+  {
+    name: "springboot",
+    icon: springboot
+  },
+  {
     name: "docker",
     icon: docker,
   },
 ];
 
 const experiences = [
-  {
+  /*{
     title: "React.js Developer",
     company_name: "Starbucks",
     icon: starbucks,
@@ -166,62 +169,47 @@ const experiences = [
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
-  },
+  }*/,
+  {
+    title: "Web Developer Intern",
+    company_name: "Vault of Codes",
+    icon: voc,
+    iconBg: "#E6DEDD",
+    date: "Aug 2025 - Present",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+    ]
+  }
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Amazon Clone",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A fully responsive Amazon-inspired e-commerce website featuring a structured homepage, product listings, and an interactive navigation bar.",
     tags: [
       {
-        name: "react",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "css",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "javascript",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: amazon,
+    source_code_link: "https://github.com/JayitaSd/AMAZON_js",
   },
   {
-    name: "Job IT",
+    name: "Headlinr",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Responsive news website using NewsAPI.org to display 40 current news articles with dynamic source linking and real-time search functionality.",
     tags: [
       {
         name: "react",
@@ -232,34 +220,26 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: headlinr,
+    source_code_link: "https://github.com/JayitaSd/NEWS_API",
   },
   {
-    name: "Trip Guide",
+    name: "Space Invader",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A 2D space shooter game created using Python and Pygame with custom graphics, collision detection, scoring and engaging enemy-mechanics. ",
     tags: [
       {
-        name: "nextjs",
+        name: "python",
         color: "blue-text-gradient",
       },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: space,
+    source_code_link: "https://github.com/JayitaSd/Space-Invader",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };
