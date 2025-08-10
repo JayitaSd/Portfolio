@@ -19,7 +19,7 @@ import {
   springboot,
   voc,
   headlinr,
-  space,
+  voice,
   amazon
 } from "../assets";
 
@@ -228,17 +228,21 @@ const projects = [
     source_code_link: "https://github.com/JayitaSd/NEWS_API",
   },
   {
-    name: "Space Invader",
+    name: "Voice Assistant",
     description:
-      "A 2D space shooter game created using Python and Pygame with custom graphics, collision detection, scoring and engaging enemy-mechanics. ",
+      "A Python voice assistant using ElevenLabs API for speech recognition, AI responses, and text-to-speech.",
     tags: [
       {
         name: "python",
         color: "blue-text-gradient",
       },
+      {
+        name: "API",
+        color: "green-text-gradient",
+      },
     ],
-    image: space,
-    source_code_link: "https://github.com/JayitaSd/Space-Invader",
+    image: voice,
+    source_code_link: "https://github.com/JayitaSd/Voice_Assistant",
   },
 ];
 

@@ -25,7 +25,7 @@ import voc from "./company/voc.png";
 
 import amazon from "./amazon.png";
 import headlinr from "./headlinr.png";
-import space from "./space.png";
+import voice from "./v_ass.jpg";
 
 export {
   logo,
@@ -51,6 +51,6 @@ export {
   tailwind,
   amazon,
   headlinr,
-  space,
   voc,
+  voice
 };
